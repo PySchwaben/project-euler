@@ -9,7 +9,4 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 
 https://projecteuler.net/problem=1
 """
-
-
-is_multiple_of_3_or_5 = lambda n: n % 3 == 0 or n % 5 == 0
-print(sum([n for n in range(1, 1000) if is_multiple_of_3_or_5(n)]))
+print(sum([n for n in range(1, 1000) if n % 3 == 0 or n % 5 == 0]))
